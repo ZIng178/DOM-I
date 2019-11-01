@@ -40,3 +40,76 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Adding the navigation items 
+
+const headerNav=document.querySelectorAll('a')
+headerNav[0].textContent = siteContent.nav["nav-item-1"];
+headerNav[1].textContent = siteContent.nav["nav-item-2"];
+headerNav[2].textContent = siteContent.nav["nav-item-3"];
+headerNav[3].textContent=siteContent.nav["nav-item-4"];
+headerNav[4].textContent=siteContent.nav["nav-item-5"];
+headerNav[5].textContent=siteContent.nav["nav-item-6"];
+
+// creating the header of the page 
+const maintitle=document.querySelector("h1")
+maintitle.textContent="DOM IS AWESOME"
+
+// Adding the button the page 
+
+const button =document.querySelector('button')
+button.textContent="Get Started"
+// Adding the circle image
+let circleimage= document.getElementById("cta-img");
+circleimage.src="img/header-img.png";
+
+// adding the mid image 
+let midImage=document.getElementById('middle-img')
+midImage.src="img/mid-page-accent.jpg";
+
+//adding text to the top section 
+// top section h4
+const textContentH4 = document.querySelectorAll('.text-content h4');
+
+textContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+//top section p 
+const textContentP = document.querySelectorAll('.text-content p');
+textContentP[0].textContent = siteContent["main-content"]["features-content"];
+textContentP[1].textContent = siteContent["main-content"]["about-content"];
+
+
+//adding text to the bottom section 
+
+//bottom section h4
+const bottomTextContentH4 = document.querySelectorAll('.bottom-content .text-content h4');
+
+bottomTextContentH4[0].textContent = siteContent["main-content"]["services-h4"];
+bottomTextContentH4[1].textContent = siteContent["main-content"]["product-h4"];
+bottomTextContentH4[2].textContent = siteContent["main-content"]["vision-h4"];
+
+//bottom section p
+const bottomTextContentP = document.querySelectorAll('.bottom-content .text-content p');
+bottomTextContentP[0].textContent = siteContent["main-content"]["services-content"];
+bottomTextContentP[1].textContent = siteContent["main-content"]["product-content"];
+bottomTextContentP[2].textContent = siteContent["main-content"]["vision-content"];
+
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent=siteContent.contact["contact-h4"];
+
+
+
+const contactContent = document.querySelectorAll(".contact p");
+contactContent[0].innerHTML = siteContent.contact["address"];
+contactContent[1].textContent = siteContent.contact["phone"];
+contactContent[2].textContent = siteContent.contact["email"];
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent.footer["copyright"];
+
+
+
+
+
+
